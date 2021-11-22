@@ -1,0 +1,13 @@
+notifications:
+  email: false
+  slack: geekshubs:rrvY2RwjwpXwVTW3jjcW8JYg
+  
+language: node_js
+node_js:
+  - '12'
+stages:
+  -test 
+before_script:
+  - npm ci
+script:
+  - npm test
